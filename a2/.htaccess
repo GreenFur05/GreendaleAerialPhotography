@@ -13,8 +13,6 @@ KrbVerifyKDC off
 # If assignments allow more partners, add more 'require user' lines
   
   require user s3722243@RMIT.INTERNAL 
-  require user s3723277@RMIT.INTERNAL
-
 
 # Staff access, do not modify: 
   require expr %{REMOTE_USER} =~ /^e\d+@RMIT\.INTERNAL$/
