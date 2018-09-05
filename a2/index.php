@@ -8,29 +8,30 @@
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   </head>
 
   <body>
 
     <header>
-      <div>Put company logo and name here</div>
+      <div><img src='../../media/GAPLogo.png' alt='GAP logo' width=100% />Greendale Aerial Photography</div>
     </header>
 
     <nav>
-      <div>Put website navigation links here</div>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="services.php">Prices</a></li>
+        <li><a href="login.php">Login</a></li>
     </nav>
 
     <main>
-      <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
-      </article>
     </main>
 
     <footer>
       <div>&copy;<script>
         document.write(new Date().getFullYear());
-      </script> Put your name(s), student number(s) and group name here.</div>
+      </script> Lachlan Furlong s3722243.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
