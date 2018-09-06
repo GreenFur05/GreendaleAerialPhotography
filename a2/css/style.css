@@ -1,3 +1,64 @@
 html {
-    font-family: 'Roboto Slab', serif;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+* {
+  border: 1px solid red;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  background-color: #fff;
+  height: 180px;
+}
+
+header img {
+  padding-left: 10%;
+  float: left;
+  max-width: 220px;
+  min-width: none;
+}
+
+header a:link, header a:visited, header a:hover, header a:target {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+h1 {
+  vertical-align: middle;
+  margin: auto
+}
+
+nav {
+  position: relative;
+  margin: 10px;
+  list-style: none;
+  border: 2px solid black;
+}
+
+nav ul li {
+  display: inline-block;  
+  padding: 0px 25px;
+}
+
+main {
+  background-color: #1C7098;
+  margin: 0;
+}
+
+main figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main article form input {
+  display: block;
+  margin: 12px;
 }
