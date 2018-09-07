@@ -14,27 +14,26 @@
   </head>
 
   <body>
-
-    <header>
+    <header class="nopadding">
         <a href="index.php">
-          <img src='../../media/GAPLogo.png' alt='GAP logo' width=100% />
-          <h1>GREENDALE AERIAL PHOTOGRAPHY</h1>
+          <img class="logo" src='../../media/LogoName.png' alt='Logo' width=100%/>
         </a>
-    </header>
-
-    <nav>
+      <nav class="nopadding">
         <ul>
+            <strong>
             <li><a href="index.php">Home</a></li>
             <li><a href="services.php">Services</a></li>
             <li><a href="login.php">Login</a></li>
+            </strong>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
     <main>
       <article>
           <form id="login" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post">
-            <input type="text" name="email" placeholder="E-mail" maxlength="50"/>
-            <input type="password" name="password" placeholder="Password" maxlength="50"/>
+            <input type="text" name="email" placeholder="E-mail" maxlength="50" required/>
+            <input type="password" name="password" placeholder="Password" maxlength="50" required/>
             <input type="submit"/>
           </form>
       </article>

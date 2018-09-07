@@ -9,32 +9,45 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="css/style.css">
     <script src='../wireframe.js'></script>
 
-    <!--  -->
+    <!-- Google webfonts -->
     <link href="//fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
   </head>
 
   <body>
-
-    <header>
-        <a href="index.php">
-          <img src='../../media/GAPLogo.png' alt='GAP logo' width=100% />
-          <h1>
-            GREENDALE AERIAL PHOTOGRAPHY
-          </h1>
-        </a>
+    <header class="nopadding">
+      <a href="index.php">
+        <img class="logo" src='../../media/LogoName.png' alt='Logo' width=100%/>
+      </a>
+      <nav class="nopadding">
+        <ul>
+          <strong>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="services.php">Services</a></li>
+            <li><a href="login.php">Login</a></li>
+          </strong>
+        </ul>
+      </nav>
     </header>
 
-    <nav>
-      <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="services.php">Services</a></li>
-        <li><a href="login.php">Login</a></li>
-    </nav>
-
     <main>
-      <figure>
-        <img src="../../media/BlueGully.png" alt="Blue gully">
-      </figure>
+      <article>
+        <figure>
+          <img src="../../media/BlueGully.png" alt="Blue gully" width=100%>
+        </figure>
+        <section>
+          <h2>What do we do?</h2>
+          <p>
+            Greendale Aerial Photography specialise in using drones and other aerial equipment to capture the perfect shot or footage from above. We offer various timing options to cater for all photographic circumstances, whether it be a quick photo or long-length video.
+          </p>
+          <h2>Who are we?</h2>
+          <p>
+            We are a small business located just out of the Wombat State Forest in Central Victoria. Our team are located throughout the district, each member highly experienced with aerial photography.
+          </p>
+          <h2>How does it work?</h2>
+          <p>
+            We will come out to a locally specified location and capture/record your chosen target. We offer different timing options at different prices to suit your needs. If desired, multiple quantities of the same time can be chosen, allowing for multiple sessions on different dates. 
+          </p>
+        </section>
     </main>
 
     <footer>

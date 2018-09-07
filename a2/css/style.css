@@ -1,54 +1,150 @@
-html {
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-}
-
+/* DEBUGGING */
+/*
 * {
   border: 1px solid red;
 }
+*/
 
-body {
+/* Basic HTML Structure */
+html {
+  font-family: 'Lato', sans-serif;
   background-color: #fff;
+  height: 100%;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* HTML5 Semantics */
 header {
   font-family: 'Roboto Slab', serif;
   font-size: 24px;
   background-color: #fff;
-  height: 180px;
-}
-
-header img {
-  padding-left: 10%;
-  float: left;
-  max-width: 220px;
-  min-width: none;
-}
-
-header a:link, header a:visited, header a:hover, header a:target {
-  text-decoration: none;
-  color: #5a5a5a;
-}
-
-h1 {
-  vertical-align: middle;
-  margin: auto
+  height: auto;
+  min-height: 140px;
+  position: relative;
+  display: table;
 }
 
 nav {
   position: relative;
-  margin: 10px;
+  display: table-cell;
   list-style: none;
-  border: 2px solid black;
+  margin: 0 0 0 10%;
+  text-align: right;
+}
+
+main {
+
+}
+
+/* Padding/Margins */
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.padding {
+  padding: 30px;
+}
+
+/* Header */
+header a:link, header a:visited {
+  text-decoration: none;
+  color: #455e6d;
+}
+
+header a:hover, header a:target {
+  text-decoration: none;
+  color: #f06722;
+}
+
+.logo {
+  margin: 10px 0 0 10%;
+  display: table-cell;
+  max-width: 480px;
+  min-width: 120px;
+}
+
+/* Main */
+main article{
+  background-color: #455e6d;
+  color: #fff;
+}
+
+main article section {
+  padding: 25px 10%;
+  width: 60%;
+}
+
+/* Services Page */
+table {
+  text-align: center;
+}
+
+main article table tbody tr td {
+  width: 15%;
+}
+
+.price {
+  padding: 7.5% 0 7.5% 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.option1 {
+  background-image: url('../../../media/LogoBlur.png');
+  background-color: #ffaaaa;
+  background-position: center;
+}
+
+.option2 {
+  background-image: url('../../../media/LogoBlur.png');
+  background-color: #b1ffaa;
+  background-position: center;
+}
+
+.option3 {
+  background-image: url('../../../media/LogoBlur.png');
+  background-color: #feffaa;
+  background-position: center;
+}
+
+.option4 {
+  background-image: url('../../../media/LogoBlur.png');
+  background-color: #baaaff;
+  background-position: center;
+}
+
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #455e6d;
+  margin: 0;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  color: #f06722;
+  margin: 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
   display: inline-block;  
-  padding: 0px 25px;
+  margin: 0 25px;
 }
 
-main {
-  background-color: #1C7098;
+main figure {
   margin: 0;
 }
 
@@ -56,9 +152,15 @@ main figure img {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 0;
 }
 
 main article form input {
   display: block;
   margin: 12px;
+}
+
+td a{
+  margin: 0;
+  padding: 0;
 }
