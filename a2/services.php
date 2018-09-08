@@ -14,11 +14,11 @@
   </head>
 
   <body>
-    <header class="nopadding">
+    <header>
             <a href="index.php">
             <img class="logo" src='../../media/LogoName.png' alt='Logo' width=100%/>
             </a>
-        <nav class="nopadding">
+        <nav>
             <ul>
                 <strong>
                 <li><a href="index.php">Home</a></li>
@@ -43,10 +43,10 @@
                                 <h1>45 min.</h1>
                             </th>
                             <th class="price option3">
-                                <h1>120 min.</h1>
+                                <h1>60 min.</h1>
                             </th>
                             <th class="price option4">
-                                <h1>6 hours</h1>
+                                <h1>120 min</h1>
                             </th>
                         </tr>
                         <tr>
@@ -67,16 +67,16 @@
                         </tr>
                         <tr>
                             <td>
-                                <p>20 minutes of flying time will give you enough time for quick photo or to check the surroundings</p>
+                                <p>20 minutes of flying time will give you enough time for a quick photo or to check the surroundings</p>
                             </td>
                             <td>
-                                <p>20 minutes of flying time will give you enough time for quick photo or to check the surroundings</p>
+                                <p>45 minutes of flying time will give you enough time for a short video or an extended photo shoot</p>
                             </td>
                             <td>
-                                <p>20 minutes of flying time will give you enough time for quick photo or to check the surroundings</p>
+                                <p>60 minutes of flying time is the right amount of time for an extended-length recording</p>
                             </td>
                             <td>
-                                <p>20 minutes of flying time will give you enough time for quick photo or to check the surroundings</p>
+                                <p>120 minutes is for the photography enthusiast, providing ample time to capture the ultimate shot, time-lapses, or long-distance flights.</p>
                             </td>
                         </tr>
                     </tbody>

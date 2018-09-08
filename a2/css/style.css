@@ -27,18 +27,15 @@ header {
   min-height: 140px;
   position: relative;
   display: table;
+  border-collapse: separate;
 }
 
 nav {
   position: relative;
   display: table-cell;
   list-style: none;
-  margin: 0 0 0 10%;
   text-align: right;
-}
-
-main {
-
+  padding: 0 0 0 40px;
 }
 
 /* Padding/Margins */
@@ -67,6 +64,7 @@ header a:hover, header a:target {
   display: table-cell;
   max-width: 480px;
   min-width: 120px;
+  
 }
 
 /* Main */
@@ -89,14 +87,21 @@ main article table tbody tr td {
   width: 15%;
 }
 
-.price {
+.price, .amount {
   padding: 7.5% 0 7.5% 0;
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 10px;
 }
 
-.option1 {
+.amount {
+  text-align: center;
+  width: 25%;
+  margin-bottom: 20px;
+  min-width: 25%;
+}
+
+.option1, .amount{
   background-image: url('../../../media/LogoBlur.png');
   background-color: #ffaaaa;
   background-position: center;
@@ -163,4 +168,49 @@ main article form input {
 td a{
   margin: 0;
   padding: 0;
+}
+
+#options {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+  width: 160px;
+  background-color: #f06722;
+  color: white;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#quantity {
+  width: 20px;
+}
+
+.submit {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  width: 200px;
+  background-color: #f06722;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loginInput {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+  width: 25%px;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main article form {
+  align-content: center;
 }

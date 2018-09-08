@@ -14,11 +14,11 @@
   </head>
 
   <body>
-    <header class="nopadding">
+    <header>
         <a href="index.php">
           <img class="logo" src='../../media/LogoName.png' alt='Logo' width=100%/>
         </a>
-      <nav class="nopadding">
+      <nav>
         <ul>
             <strong>
             <li><a href="index.php">Home</a></li>
@@ -31,11 +31,13 @@
 
     <main>
       <article>
-          <form id="login" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post">
-            <input type="text" name="email" placeholder="E-mail" maxlength="50" required/>
-            <input type="password" name="password" placeholder="Password" maxlength="50" required/>
-            <input type="submit"/>
-          </form>
+          <section>
+            <form id="login" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post">
+                <input class="loginInput" type="text" name="email" placeholder="E-mail" maxlength="50" required/>
+                <input class="loginInput" type="password" name="password" placeholder="Password" maxlength="50" required/>
+                <input class="submit" type="submit"/>
+            </form>
+          </section>
       </article>
     </main>
 

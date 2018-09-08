@@ -14,11 +14,11 @@
   </head>
 
   <body>
-    <header class="nopadding">
+    <header>
       <a href="index.php">
         <img class="logo" src='../../media/LogoName.png' alt='Logo' width=100%/>
       </a>
-      <nav class="nopadding">
+      <nav>
         <ul>
           <strong>
             <li><a href="index.php">Home</a></li>
