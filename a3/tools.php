@@ -71,7 +71,7 @@ function printMyCode() {
   $lines = file($_SERVER['SCRIPT_FILENAME']);
   echo "<pre class='mycode'>\n";
   foreach ($lines as $lineNo => $lineOfCode)
-    printf("%3u: %1s \n", $lineNp, rtrim(htmlentities($lineOfCode)));
+    printf("%3u: %1s \n", $lineNo, rtrim(htmlentities($lineOfCode)));
   echo "</pre>";
 }
 
