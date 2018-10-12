@@ -1,0 +1,9 @@
+ID	OID	Title	Description	Option	Price
+20	A	20 minutes	20 minutes of flying time will give you enough time for a quick photo or to check the surroundings	1080p	35
+20	B	20 minutes	20 minutes of flying time will give you enough time for a quick photo or to check the surroundings	4K	40
+45	A	45 minutes	45 minutes of flying time will give you enough time for a short video or an extended photo shoot	1080p	50
+45	B	45 minutes	45 minutes of flying time will give you enough time for a short video or an extended photo shoot	4K	55
+60	A	60 minutes	60 minutes of flying time is the right amount of time for an extended-length recording	1080p	60
+60	B	60 minutes	60 minutes of flying time is the right amount of time for an extended-length recording	4K	65
+120	A	120 minutes	120 minutes is for the photography enthusiast, providing ample time to capture the ultimate shot, time-lapses, or long-distance flights	1080p	110
+120	B	120 minutes	120 minutes is for the photography enthusiast, providing ample time to capture the ultimate shot, time-lapses, or long-distance flights.	4K	115

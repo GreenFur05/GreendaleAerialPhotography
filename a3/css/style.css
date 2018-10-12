@@ -1,1 +1,241 @@
-/* Insert your styles here */
+/* DEBUGGING */
+/*
+* {
+  border: 1px solid red;
+}
+*/
+
+/* Basic HTML Structure */
+html {
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* HTML5 Semantics */
+header {
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  background-color: #fff;
+  height: auto;
+  min-height: 140px;
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+
+nav {
+  position: relative;
+  display: table-cell;
+  list-style: none;
+  text-align: right;
+  padding: 0 0 0 40px;
+}
+
+/* Padding/Margins */
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.padding {
+  padding: 30px;
+}
+
+/* Header */
+header a:link, header a:visited {
+  text-decoration: none;
+  color: #455e6d;
+}
+
+header a:hover, header a:active {
+  text-decoration: none;
+  color: #f06722;
+}
+
+.logo {
+  margin: 10px 0 0 10%;
+  display: table-cell;
+  max-width: 480px;
+  min-width: 120px;
+  
+}
+
+/* Main */
+main article{
+  background-color: #465e6c;
+  color: #fff;
+}
+
+main article section {
+  padding: 25px 10%;
+  width: 80%;
+}
+
+/* Footer */
+footer {
+  background-color: #f06722;
+  color: #fff;
+}
+
+/* Services Page */
+table {
+  text-align: center;
+}
+
+main article table {
+  border-spacing: 20px 0;
+}
+
+main article table tbody tr td {
+  width: 20%;
+}
+
+.link:link, .link:visited {
+  text-decoration: none;
+}
+
+.link:hover, .link:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.price, .amount {
+  padding: 2.5% 0 2.5% 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+/* Service Page */
+
+.amount {
+  text-align: center;
+  width: 40%;
+  margin-bottom: 20px;
+  min-width: 25%;
+}
+
+.option1 {
+  background-image: url('../../../media/LogoBlur.png');
+  background-color: #ffaaaa;
+  background-position: center;
+}
+
+.option2 {
+  background-image: url('../../../media/LogoBlur.png');
+  background-color: #b1ffaa;
+  background-position: center;
+}
+
+.option3 {
+  background-image: url('../../../media/LogoBlur.png');
+  background-color: #feffaa;
+  background-position: center;
+}
+
+.option4 {
+  background-image: url('../../../media/LogoBlur.png');
+  background-color: #baaaff;
+  background-position: center;
+}
+
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #455e6d;
+  margin: 0;
+  font-size: 3em;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  color: #f06722;
+  margin: 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;  
+  margin: 0 25px;
+}
+
+main figure {
+  margin: 0;
+}
+
+main figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+main article form input {
+  display: block;
+  margin: 12px;
+}
+
+td a{
+  margin: 0;
+  padding: 0;
+}
+
+#options {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+  width: 160px;
+  background-color: #f06722;
+  color: white;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#quantity {
+  width: 20px;
+}
+
+.submit {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5em;
+  width: 200px;
+  background-color: #f06722;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loginInput {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+  width: 25%px;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main article form {
+  align-content: center;
+}
+
+input:disabled {
+  background-color: #e4b198;
+}
