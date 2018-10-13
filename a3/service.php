@@ -16,7 +16,7 @@
   else
     header('Location: services.php');
 
-  topModule("Greendale Aerial Photography - Home");
+  topModule("Greendale Aerial Photography - $id minutes");
     
 ?>​
         <article>
@@ -31,9 +31,10 @@
                     ?>
                 </div>
                 <div class="para">
-                    <p>
-                        20 minutes of flying time will give you enough time for quick photo or to check the surroundings
-                    </p>
+                <?php
+                    $desc = $details[$id]['A']['Description'];
+                    echo "<p>$desc</p>";
+                    ?>
                 </div>
                 <div>
                     <button onclick="down()">-</button>
@@ -41,9 +42,8 @@
                     <button onclick="up()">+</button>
                 </div>  
                 <div>
-                    <form id="service" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post" onsubmit="return validation()">
-                        
-                        <input type="hidden" name="id" value="" required/>
+                    <form id="service" action="cart.php" method="post" onsubmit="return validation()">
+                        <input type="hidden" name="id" value=<?php echo $_GET['id']; ?> required/>
                         <select id="options" name="oid" onchange="optionsChanged()">
                             <option value="" disabled selected>Select your option</option>
                             <option value="1080p">1080p</option>

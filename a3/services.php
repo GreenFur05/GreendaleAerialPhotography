@@ -8,11 +8,15 @@
 
     $_SESSION['services'] = readCSV("services.txt");
 
-    topModule("Greendale Aerial Photography - Home");
+    if (isset($_POST['cancel'])) {
+        unset($_SESSION['cart']);
+    }
+
+    topModule("Greendale Aerial Photography - Services");
 ?>​
-        <article>
+        <article>    
             <section>
-            <h2>Services</h2>
+                <h2>Services</h2>
                 <table>
                     <tbody>
                         <?php
@@ -48,6 +52,9 @@
                         ?>
                     </tbody>
                 </table>
+            </section>
+            <section>
+                <h3>Note: It can be arranged that a purchase of more than one package (for instance, three 20 minute packages) can be used over more than one date. Please advise if you would like this during your purchase.</h3>
             </section>
         </article>
 <?php

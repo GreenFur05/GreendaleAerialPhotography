@@ -1,5 +1,10 @@
 <?php
 function topModule($pageTitle) {
+  /*
+  DEBUG
+  ini_set('display_errors', 'On');
+  error_reporting(E_ALL);
+  */
   $output = <<<"HEADER_TEXT"
   <!DOCTYPE html>
         <html lang='en'>
@@ -46,6 +51,7 @@ function bottomModule() {
           </script> Lachlan Furlong s3722243.</div>
           <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
           <div><a href="services.txt">services.txt</a></div>
+          <div><a href="services.txt">orders.txt</a></div>
           <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
         </footer>
       </body>
@@ -99,5 +105,24 @@ function readCSV($fileName) {
     } 
   fclose($fp); 
   return $pumps;
+}
+
+// if (checkout($_POST['firstName'],$_POST['lastName'],$_POST['email'],$_POST['address'],$_POST['phone'],$_POST['card'],$_POST['expiry'])) {echo "receipt.php";} else {echo "checkout.php";}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+
+function writeCSV($fileName, $records) {
+  $fp = fopen($fileName, "a");
+  flock($fp,LOCK_SH);
+  foreach ($records as $record) {
+    fwrite($fp, implode("\t",$record)."\n");
+  }
+  flock($fp,LOCK_UN);
+  fclose($fp);
 }
 ?>

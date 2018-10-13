@@ -8,7 +8,7 @@
     <img src="../../media/BlueGully.png" alt="Blue gully" width=100%>
   </figure>
   <section>
-    <h2>What do we do?</h2>
+  <h2>What do we do?</h2>    
     <p>
       Greendale Aerial Photography specialise in using drones and other aerial equipment to capture the perfect shot or footage from above. We offer various timing options to cater for all photographic circumstances, whether it be a quick photo or long-length video.
     </p>

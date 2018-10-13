@@ -198,7 +198,7 @@ td a{
   background-color: #f06722;
   color: white;
   padding: 7px 10px;
-  margin: 4px 0;
+  margin: 16px 0;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -219,9 +219,11 @@ td a{
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: auto;
+  margin-right: 0;
 }
 
-.loginInput {
+.input {
   font-family: 'Lato', sans-serif;
   font-size: 0.9em;
   width: 25%px;
@@ -238,4 +240,86 @@ main article form {
 
 input:disabled {
   background-color: #e4b198;
+}
+
+.emptyCart {
+  font-size: 2em;
+  color: #fff
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 70% 15% 15%;
+  border-bottom: 1px solid #f06722;
+}
+
+.idBox {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  vertical-align: center;
+}
+
+.oidBox {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+
+  border: 3px solid #f06722;
+  border-radius: 10px;
+}
+
+.qtyBox {
+  grid-column: 3;
+  grid-row: 1;
+  text-align: center;
+
+  border: 3px solid #f06722;
+  border-radius: 10px;
+}
+
+.priceBox {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  text-align: center;
+  border: 3px solid #f06722;
+  border-radius: 10px;
+}
+
+.cancel {
+  background-color: #e4b198;
+  border: 3px solid #f06722;
+  margin-right: 10px;
+}
+
+.container {
+  text-align: right;
+}
+
+.align {
+  display: inline-block;
+}
+
+#submitCart {
+  border: 3px solid #f06722;
+}
+
+.error {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9em;
+  width: 25%px;
+  padding: 7px 10px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #f06722;
+}
+
+.co {
+  display: inline-block;
+}
+
+#visa {
+  display: none;
 }
