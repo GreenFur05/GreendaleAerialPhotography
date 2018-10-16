@@ -46,7 +46,7 @@
             $phoneError = "Please enter a valid mobile number"; 
         }
 
-        if (preg_match("/^\s*(?:[0-9]\s*){12,19}$/",$POST['card'])) {
+        if (preg_match("/^\s*(?:[0-9]\s*){12,19}$/",$_POST['card'])) {
             $card = test_input($_POST["card"]);
             $cardError = "";
         }
@@ -57,7 +57,7 @@
         if (preg_match("/^(([0-9]){4})|([0-9]{2}\/[0-9]{2})$/",$_POST['expiry'])) {
             $expires = \DateTime::createFromFormat('my', str_replace("/", "", $_POST['expiry']));
             $now = new \DateTime();
-            if ($now - $expires > 1) {
+            if ($now - $expires > strtotime('+30 days')) {
                 $expiry = test_input($_POST["expiry"]);
                 $expiryError = "";
             }
