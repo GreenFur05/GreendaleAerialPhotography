@@ -38,7 +38,7 @@
             $addressError = "Only certain characters allowed"; 
         }
 
-        if (preg_match("/^(\+614|\(04\)|04){1} ?[0-9]{2} ?[0-9]{3} ?[0-9]{3}$/",$POST['phone'])) {
+        if (preg_match("/^(\+614|\(04\)|04){1} ?[0-9]{2} ?[0-9]{3} ?[0-9]{3}$/",$_POST['phone'])) {
             $phone = test_input($_POST["phone"]);
             $phoneError = "";
         }
@@ -55,9 +55,8 @@
         }
 
         if (preg_match("/^(([0-9]){4})|([0-9]{2}\/[0-9]{2})$/",$_POST['expiry'])) {
-            $expires = \DateTime::createFromFormat('my', str_replace("/", "", $_POST['expiry']));
-            $now = new \DateTime();
-            if ($now - $expires > strtotime('+30 days')) {
+            $expires = DateTime::createFromFormat('my', str_replace("/", "", $_POST['expiry']));
+            if ($expires > strtotime('+30 days')) {
                 $expiry = test_input($_POST["expiry"]);
                 $expiryError = "";
             }
