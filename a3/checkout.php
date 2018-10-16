@@ -30,7 +30,7 @@
             $emailError = "Invalid email format"; 
         }
 
-        if (preg_match("/^[a-zA-Z0-9 .,\n'-]*$/",$POST['address'])) {
+        if (preg_match("/^[a-zA-Z0-9 .,\n'-]*$/",$_POST['address'])) {
             $address = test_input($_POST["address"]);
             $addressError = "";
         }
@@ -54,7 +54,7 @@
             $cardError = "Please enter a valid credit card number"; 
         }
 
-        if (preg_match("/^(([0-9]){4})|([0-9]{2}\/[0-9]{2})$/",$POST['expiry'])) {
+        if (preg_match("/^(([0-9]){4})|([0-9]{2}\/[0-9]{2})$/",$_POST['expiry'])) {
             $expires = \DateTime::createFromFormat('my', str_replace("/", "", $_POST['expiry']));
             $now = new \DateTime();
             if ($now - $expires > 1) {

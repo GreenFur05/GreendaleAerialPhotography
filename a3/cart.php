@@ -20,18 +20,19 @@
         if ($qty > 0 && array_key_exists($id,$services) && in_array($oid,$services[$id][$oid == "1080p" ? $oid='A' : $oid='B'])) {
 
             // If an entry already exists in the array, and more of the same are added to cart, they will be appended instead of replacing.
-            if (array_key_exists($id . $oid,$_SESSION['cart'])) {
+            /*
+            if (array_key_exists($id . $oid, $_SESSION['cart'])) {
                 $_SESSION['cart'][$id . $oid]['qty'] += $qty;
             }
-            else {
+            else { */
                 $_SESSION['cart'][$id . $oid]['oid'] = $oid;
                 $_SESSION['cart'][$id . $oid]['qty'] = $qty;
-            }
+            //}
         }
     }
       
 
-    topModule("Greendale Aerial Photography - Home");
+    topModule("Greendale Aerial Photography - Cart");
 ?>​
     <article>
         <section>
