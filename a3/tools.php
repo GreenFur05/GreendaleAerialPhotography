@@ -120,8 +120,9 @@ function writeCSV($fileName, $records) {
   $fp = fopen($fileName, "a");
   flock($fp,LOCK_SH);
   foreach ($records as $record) {
-    fwrite($fp, implode("\t",$record)."\n");
+    fwrite($fp, $record . "\t");
   }
+  fwrite($fp, "\n");
   flock($fp,LOCK_UN);
   fclose($fp);
 }

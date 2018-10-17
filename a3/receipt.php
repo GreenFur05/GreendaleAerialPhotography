@@ -70,6 +70,7 @@ topModule("Greendale Aerial Photography - Receipt");
             }
             echo "</tr>";
             writeCSV("orders.txt",$records);
+            $records = array();
         }
 
         ?>
