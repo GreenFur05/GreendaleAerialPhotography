@@ -117,7 +117,7 @@ function test_input($data) {
 }
 
 function writeCSV($fileName, $records) {
-  $fp = fopen($fileName, "a");
+  $fp = fopen((string)$fileName, "a");
   flock($fp,LOCK_SH);
   foreach ($records as $record) {
     fwrite($fp, $record . "\t");
