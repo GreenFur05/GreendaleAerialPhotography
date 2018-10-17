@@ -62,7 +62,7 @@ topModule("Greendale Aerial Photography - Receipt");
             $oid = ($oid=='A' ? '1080p' : '4K');
         
             $records[] = date("d/m/Y");
-            array_push($records, $_SESSION['customerDetails']['firstName'] . $_SESSION['customerDetails']['lastName'],$_SESSION['customerDetails']['email'],$_SESSION['customerDetails']['phone'],$_SESSION['customerDetails']['address'],
+            array_push($records, $_SESSION['customerDetails']['firstName'] . " " . $_SESSION['customerDetails']['lastName'],$_SESSION['customerDetails']['email'],$_SESSION['customerDetails']['phone'],$_SESSION['customerDetails']['address'],
             substr($id,0,-1),$oid,$qty,$services[substr($id,0,-1)][$oid]['Price'],$price);
             echo "<tr>";
             foreach($records as $record) {
